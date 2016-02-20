@@ -1,7 +1,7 @@
 LIB
 ===
 
-LIB is PHP API for MySQL CRUD operation and more
+PHP library for API for MySQL CRUD operation and Logger
 
 
 VERSION:
@@ -78,7 +78,7 @@ require_once('lib'.DS.'init.inc.php');
 
 $db = new Database();
 $db->insert('CRUDClass',array('name'=>'Name 5','email'=>'name5@email.com'));  // Table name, column names and respective values
-$res = $db->getResult();  
+$res = $db->getResult();
 print_r($res);
 ```
 
@@ -93,7 +93,7 @@ require_once('lib'.DS.'init.inc.php');
 
 $db = new Database();
 $db->delete('CRUDClass','id=5');  // Table name, WHERE conditions
-$res = $db->getResult();  
+$res = $db->getResult();
 print_r($res);
 ```
 
@@ -113,10 +113,3 @@ foreach($res as $output){
 	echo $output["name"]."<br />";
 }
 ```
-
-
-SPECIAL THANKS TO:
-------------------
-
-Rory Standley  
-[MySQL-CRUD-PHP-OOP](https://github.com/rorystandley/MySQL-CRUD-PHP-OOP)
