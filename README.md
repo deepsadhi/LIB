@@ -1,7 +1,7 @@
-LIB
-===
+MySQL CRUD with Logger
+======================
 
-PHP library for API for MySQL CRUD operation and Logger
+PHP library for MySQL CRUD operation and Logger
 
 
 VERSION:
